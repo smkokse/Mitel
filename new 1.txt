@@ -1,0 +1,20 @@
+class solutions{
+
+
+int binarysearch(int arr[], int left, int right, int target){
+
+if(right >= left){
+
+int mid = left + (right - 1) / 2;
+
+if(arr[mid] == x) return mid;
+
+if(arr[mid] > x) return binarysearch(arr - 1, left, mid - 1, target)
+
+return binarysearch(arr, mid + 1, right, target);
+
+}
+
+return -1;
+
+}
