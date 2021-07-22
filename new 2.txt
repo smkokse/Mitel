@@ -1,0 +1,6 @@
+Query 1:
+Select e.Name, m.Name as Manager From employee e, employee m where e.ManagerId = m.ManagerId;
+
+Query 2:
+
+Select e.EmployeeID, e.Name, m.Detail from employee e, employeedetails m where e.EmployeeID = m.EmployeeID
