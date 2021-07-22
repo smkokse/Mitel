@@ -3,4 +3,8 @@ Select e.Name, m.Name as Manager From employee e, employee m where e.ManagerId =
 
 Query 2:
 
-Select e.EmployeeID, e.Name, m.Detail from employee e, employeedetails m where e.EmployeeID = m.EmployeeID
+Select e.EmployeeID, e.Name, m.Detail from employee e, employeedetails m where join on e.EmployeeID = m.EmployeeID;
+
+Query 3:
+
+Select e.EmployeeID, e.Name, m.Detail from employee e left join employeedetails m On e.EmployeeID = m.EmployeeID;
